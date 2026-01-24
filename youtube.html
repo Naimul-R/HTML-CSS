@@ -14,8 +14,7 @@
                 margin-bottom: 0;
             }
             .thumbnail{
-                width: 300px;
-                display: block;
+                width: 100%;
             }
             .search-bar{
                 display: block;
@@ -28,20 +27,9 @@
                 margin-bottom: 10px;
                 font-size-adjust: 100%;
             }
-            .video-preview{
-                width: 300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 15px;
-            }
-            .channel-picture{
-                display: inline-block;
-                width: 50px;
-                vertical-align: top;
-            }
-            .video-info{
-                display: inline-block;
-                width: 200px;
+            .video-info-grid {
+                display: grid;
+                grid-template-columns: 50px 1fr;
             }
             .profile-picture{
                 width: 36px;
@@ -58,54 +46,150 @@
             .video-author {
                 margin-bottom: 4px;
             }
+            .video-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 16px;
+                row-gap: 40px;
+            }
         </style>
     </head>
     <body> 
         <input class="search-bar" type="text" placeholder="search">
 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnail/thumbnail-1.webp">
-            </div>
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="Channal-Pictures/channels1_profile.jpg">
+        <div class="video-grid">
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnail/thumbnail-1.webp">
                 </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Your Brain Won’t Let You Change — Until This Happens
-                    </p>
-                    <p class="video-author">
-                        Chase Hughes
-                    </p>
-                    <p class="video-stats">
-                        507K views &#183; 11 days ago
-                    </p>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channal-Pictures/channels1_profile.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Your Brain Won’t Let You Change — Until This Happens
+                        </p>
+                        <p class="video-author">
+                            Chase Hughes
+                        </p>
+                        <p class="video-stats">
+                            507K views &#183; 11 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnail/thumbnail-2.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channal-Pictures/channels2_profile.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Neurologists Debunk 11 Brain Myths | Debunked | Science Insider
+                        </p>
+                        <p class="video-author">
+                            Insider Science
+                        </p>
+                        <p class="video-stats">
+                            2.5M views &#183; years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnail/thumbnail-1.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channal-Pictures/channels1_profile.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Your Brain Won’t Let You Change — Until This Happens
+                        </p>
+                        <p class="video-author">
+                            Chase Hughes
+                        </p>
+                        <p class="video-stats">
+                            507K views &#183; 11 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnail/thumbnail-2.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channal-Pictures/channels2_profile.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Neurologists Debunk 11 Brain Myths | Debunked | Science Insider
+                        </p>
+                        <p class="video-author">
+                            Insider Science
+                        </p>
+                        <p class="video-stats">
+                            2.5M views &#183; years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnail/thumbnail-1.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channal-Pictures/channels1_profile.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Your Brain Won’t Let You Change — Until This Happens
+                        </p>
+                        <p class="video-author">
+                            Chase Hughes
+                        </p>
+                        <p class="video-stats">
+                            507K views &#183; 11 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnail/thumbnail-2.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channal-Pictures/channels2_profile.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Neurologists Debunk 11 Brain Myths | Debunked | Science Insider
+                        </p>
+                        <p class="video-author">
+                            Insider Science
+                        </p>
+                        <p>
+                            2.5M views &#183; years ago
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnail/thumbnail-2.webp">
-            </div>
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="Channal-Pictures/channels2_profile.jpg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Neurologists Debunk 11 Brain Myths | Debunked | Science Insider
-                    </p>
-                    <p class="video-author">
-                        Insider Science
-                    </p>
-                    <p class="video-stats">
-                        2.5M views &#183; years ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </body>
 </html>
