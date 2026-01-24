@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Practice</title>
+    </head>
+    <body>
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 100px;
+        ">
+            <div style="background-color: lightseagreen;">Div 1</div>
+            <div style="background-color: lightpink;">Div 2 <p>Hello!</p> </div>
+        </div>
+        <div style="
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 100px 100px 150px;
+        ">
+            <div style="background-color: lightseagreen;">100 px</div>
+            <div style="background-color: lightpink;">100 px <p>World</p></div>
+            <div style="background-color: lightseagreen;">150 px</div>
+        </div>
+        <div style="
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+        ">
+            <div style="background-color: lightseagreen;">Div 1</div>
+            <div style="background-color: lightpink;">1 Fr</div>
+        </div>
+
+        <div style="
+        margin-top: 20px;
+            display: grid;
+            grid-template-columns: 100px 1fr 2fr;
+        ">
+            <div style="background-color: lightseagreen;">1 fr</div>
+            <div style="background-color: lightpink;">Div 2</div>
+            <div style="background-color: lightseagreen;">2 fr</div>
+        </div>
+    </body>
+</html>
